@@ -1,27 +1,4 @@
-spring:
-    application:
-        name: "02_CustomerService"
-    datasource:
-        username: root
-        password: root123
-        url: jdbc:mysql://localhost:3306/customer_db
-        driver-class-name: com.mysql.cj.jdbc.Driver
-    profiles:
-        active:
-            - "prod"
-springdoc:
-    api-docs:
-        enabled: true
 
-logging:
-    file:
-        name: log/customers.log
-
-server:
-    port: 8080
-
-    springdoc.swagger-ui.enabled: true
-#Custom Properties - Used in application
 build:
     version: "2.1"
 customer:
